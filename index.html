@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>快乐小学堂 · 启蒙游戏合集</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <div id="home-screen" class="screen active">
+    <div class="home-header">
+      <h1>🌈 快乐小学堂</h1>
+      <div class="stars-badge">⭐ <span id="total-stars">0</span></div>
+      <button id="voice-btn" class="sound-btn" aria-label="音色选择">🎤</button>
+      <button id="sound-toggle" class="sound-btn" aria-label="声音开关">🔊</button>
+    </div>
+    <div class="home-sub">中班小朋友的启蒙小游戏，点一点开始吧！</div>
+    <div id="game-menu" class="menu-grid"></div>
+  </div>
+  <div id="game-screen" class="screen">
+    <div class="game-header">
+      <button id="back-btn" class="back-btn">🏠</button>
+      <h2 id="game-title"></h2>
+      <div class="stars-badge">⭐ <span id="game-stars">0</span></div>
+    </div>
+    <div id="game-container"></div>
+  </div>
+</div>
+<div id="celebration" class="overlay hidden">
+  <div id="confetti-layer"></div>
+  <div class="cele-box">
+    <div class="cele-emoji">🎉</div>
+    <div id="cele-title" class="cele-title">挑战成功！</div>
+    <div id="cele-stars" class="cele-stars">⭐⭐⭐</div>
+    <div class="cele-btns">
+      <button id="cele-next" class="big-btn btn-green hidden">➡️ 下一关</button>
+      <button id="cele-replay" class="big-btn btn-orange">🔁 再玩一次</button>
+      <button id="cele-home" class="big-btn btn-blue">🏠 回主页</button>
+    </div>
+  </div>
+</div>
+<div id="voice-panel" class="overlay hidden">
+  <div class="voice-box">
+    <div class="cele-title">🎤 选择朗读声音</div>
+    <div class="voice-sub">中文声音（领读 / 题目 / 夸奖）</div>
+    <div id="voice-list-zh" class="voice-list"></div>
+    <div class="voice-sub">英文声音（字母和单词发音）</div>
+    <div id="voice-list-en" class="voice-list"></div>
+    <div class="voice-tip">点一下声音即可试听并使用；☁️ 为联网声音（需网络）</div>
+    <button id="voice-close" class="big-btn btn-blue">完成</button>
+  </div>
+</div>
+<script src="js/data.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+<script src="js/games/maze.js"></script>
+<script src="js/games/poem.js"></script>
+<script src="js/games/english.js"></script>
+<script src="js/games/pattern.js"></script>
+<script src="js/games/numbersense.js"></script>
+<script src="js/games/arithmetic.js"></script>
+<script src="js/games/match.js"></script>
+<script src="js/games/animals.js"></script>
+</body>
+</html>

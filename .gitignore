@@ -1,0 +1,8 @@
+# Codely local agent state (machine specific, must not be published)
+.codely-cli/
+
+# OS / editor junk
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.log
